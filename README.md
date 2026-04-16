@@ -1,7 +1,7 @@
 ![GitHub License](https://img.shields.io/github/license/yanvpp/POO) ![GitHub repo size](https://img.shields.io/github/repo-size/yanvpp/ELDII)
 
 
-# ELDII
+# Eletrônica Digital II
 > Repositório destinado às atividadades realizadas na disciplina de Eletrônica Digital II.
 
 ## Aulas
