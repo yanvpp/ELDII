@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELDII/aula_28-04-26/simulation/modelsim
+Eseqdec
+Z1 w1777377184
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8/home/aluno/ELDII/aula_28-04-26/seqDec.vhd
+Z6 F/home/aluno/ELDII/aula_28-04-26/seqDec.vhd
+l0
+L5 1
+V4ioEU=:LK7DI0hE@?Eza23
+!s100 9Uz:<g[QaWh:KX<[EhQ972
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1777378252
+!i10b 1
+Z9 !s108 1777378252.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_28-04-26/seqDec.vhd|
+Z11 !s107 /home/aluno/ELDII/aula_28-04-26/seqDec.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Acorrecao2
+R2
+R3
+R4
+Z14 DEx4 work 6 seqdec 0 22 4ioEU=:LK7DI0hE@?Eza23
+!i122 1
+l64
+Z15 L62 21
+Z16 V]51R9=l;69MD4k;TWF9o51
+Z17 !s100 7H7YIf0CEaTl5UIQ@E6zS2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Acorrecao1
+R2
+R3
+R4
+R14
+!i122 1
+l38
+Z18 L36 25
+Z19 V8YW@=Ib3W@HiVzRfl[mQz0
+Z20 !s100 FkZ`kk7BSB?P@z4gGXKXB2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aexemplo
+R2
+R3
+R4
+R14
+!i122 1
+l19
+Z21 L16 19
+Z22 VI8h^HAzSLaWKmM9GYf6m^1
+Z23 !s100 K[LiH`Xh0V=_jTd97j@lS0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Cseqdec_v1
+Z24 eseqDec
+aexemplo
+DAx4 work 6 seqdec 7 exemplo 22 I8h^HAzSLaWKmM9GYf6m^1
+R2
+R3
+R4
+R14
+!i122 1
+R1
+R0
+R5
+R6
+l0
+L84 1
+Vj5kDoCG8J[J9OZ6mJcYZG2
+!s100 IjJ@N2fncZK_SmX;292gW1
+R7
+31
+R8
+!i10b 0
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Cseqdec_v2
+R24
+acorrecao1
+DAx4 work 6 seqdec 9 correcao1 22 8YW@=Ib3W@HiVzRfl[mQz0
+R2
+R3
+R4
+R14
+!i122 1
+R1
+R0
+R5
+R6
+l0
+L88 1
+V0hN0WCbmT5jV0zWYRUmLe1
+!s100 W<^3kPIVl]72A>L>=W71?1
+R7
+31
+R8
+!i10b 0
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Cseqdec_v3
+R24
+acorrecao2
+DAx4 work 6 seqdec 9 correcao2 22 ]51R9=l;69MD4k;TWF9o51
+R2
+R3
+R4
+R14
+!i122 1
+R1
+R0
+R5
+R6
+l0
+L92 1
+VX<[WZ_66I:aJ[o[@DS[=K3
+!s100 UKTlGPPTZ47KG@Ik[KPW`0
+R7
+31
+R8
+!i10b 0
+R9
+R10
+R11
+!i113 1
+R12
+R13
