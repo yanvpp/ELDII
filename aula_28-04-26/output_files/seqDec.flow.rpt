@@ -1,5 +1,5 @@
 Flow report for seqDec
-Tue Apr 28 08:53:11 2026
+Wed Apr 29 23:43:28 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 28 08:53:11 2026           ;
+; Flow Status                        ; Successful - Wed Apr 29 23:43:28 2026           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; seqDec                                          ;
 ; Top-level Entity Name              ; seqDec                                          ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/28/2026 08:53:07 ;
+; Start date & time ; 04/29/2026 23:43:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; seqDec              ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 185410946189304.177737718726140        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 206863106536974.177751700301536        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,18 +99,18 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:04     ; 1.0                     ; 723 MB              ; 00:00:11                           ;
-; Total                  ; 00:00:04     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 716 MB              ; 00:00:07                           ;
+; Total                  ; 00:00:05     ; --                      ; --                  ; 00:00:07                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                               ;
-+------------------------+---------------------+------------------+------------+----------------+
-; Module Name            ; Machine Hostname    ; OS Name          ; OS Version ; Processor type ;
-+------------------------+---------------------+------------------+------------+----------------+
-; Analysis & Elaboration ; sje-lin-sidi-918562 ; Debian GNU/Linux ; 12         ; x86_64         ;
-+------------------------+---------------------+------------------+------------+----------------+
++----------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                    ;
++------------------------+--------------------------+------------------+------------+----------------+
+; Module Name            ; Machine Hostname         ; OS Name          ; OS Version ; Processor type ;
++------------------------+--------------------------+------------------+------------+----------------+
+; Analysis & Elaboration ; TELE-Quartus-Matlab-novo ; Debian GNU/Linux ; 13         ; x86_64         ;
++------------------------+--------------------------+------------------+------------+----------------+
 
 
 ------------

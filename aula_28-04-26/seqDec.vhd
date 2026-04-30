@@ -85,10 +85,10 @@ configuration seqDec_v1 of seqDec is
 	for exemplo end for;
 end configuration;
 
-configuration seqDec_v2 of seqDec is
-	for correcao1 end for;
-end configuration;
-
-configuration seqDec_v3 of seqDec is
-	for correcao2 end for;
-end configuration;
+--configuration seqDec_v2 of seqDec is
+--	for correcao1 end for;
+--end configuration;
+--
+--configuration seqDec_v3 of seqDec is
+--	for correcao2 end for;
+--end configuration;

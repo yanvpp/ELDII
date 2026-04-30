@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/aluno/ELDII/aula_28-04-26/simulation/modelsim
+Z0 d/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim
 Eseqdec
-Z1 w1777377184
+Z1 w1777499797
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1
+!i122 3
 R0
-Z5 8/home/aluno/ELDII/aula_28-04-26/seqDec.vhd
-Z6 F/home/aluno/ELDII/aula_28-04-26/seqDec.vhd
+Z5 8/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.vhd
+Z6 F/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.vhd
 l0
 L5 1
 V4ioEU=:LK7DI0hE@?Eza23
 !s100 9Uz:<g[QaWh:KX<[EhQ972
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1777378252
+Z8 !s110 1777515553
 !i10b 1
-Z9 !s108 1777378252.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_28-04-26/seqDec.vhd|
-Z11 !s107 /home/aluno/ELDII/aula_28-04-26/seqDec.vhd|
+Z9 !s108 1777515553.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.vhd|
+Z11 !s107 /home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -37,7 +37,7 @@ R2
 R3
 R4
 Z14 DEx4 work 6 seqdec 0 22 4ioEU=:LK7DI0hE@?Eza23
-!i122 1
+!i122 3
 l64
 Z15 L62 21
 Z16 V]51R9=l;69MD4k;TWF9o51
@@ -57,7 +57,7 @@ R2
 R3
 R4
 R14
-!i122 1
+!i122 3
 l38
 Z18 L36 25
 Z19 V8YW@=Ib3W@HiVzRfl[mQz0
@@ -77,7 +77,7 @@ R2
 R3
 R4
 R14
-!i122 1
+!i122 3
 l19
 Z21 L16 19
 Z22 VI8h^HAzSLaWKmM9GYf6m^1
@@ -100,7 +100,7 @@ R2
 R3
 R4
 R14
-!i122 1
+!i122 3
 R1
 R0
 R5
@@ -127,7 +127,7 @@ R2
 R3
 R4
 R14
-!i122 1
+!i122 3
 R1
 R0
 R5
@@ -154,7 +154,7 @@ R2
 R3
 R4
 R14
-!i122 1
+!i122 3
 R1
 R0
 R5
