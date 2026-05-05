@@ -1,0 +1,57 @@
+# do seqAForLoop_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# 
+# vcom -93 -work work {/home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:05 on May 05,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seqAForLoop
+# -- Compiling architecture code_v1 of seqAForLoop
+# -- Compiling configuration ifsc_v1
+# -- Loading entity seqAForLoop
+# -- Loading architecture code_v1 of seqAForLoop
+# End time: 09:13:05 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.seqaforloop(code_v1)
+# vsim work.seqaforloop(code_v1) 
+# Start time: 09:13:32 on May 05,2026
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-44-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.seqaforloop(code_v1)
+force -freeze sim:/seqaforloop/a 00000000 0
+run
+force -freeze sim:/seqaforloop/a 00000001 0
+run
+force -freeze sim:/seqaforloop/a 10000001 0
+run
+force -freeze sim:/seqaforloop/a 11111111 0
+run
+
+

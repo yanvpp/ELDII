@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELDII/aula_05-05-26/simulation/modelsim
+Cifsc_v1
+eseqAForLoop
+acode_v1
+DAx4 work 11 seqaforloop 7 code_v1 22 K:h5Z^<e_Q@PfMNaMFG6[0
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z3 DEx4 work 11 seqaforloop 0 22 dCMEl@IMAHYIa_=hTo1FP3
+!i122 0
+Z4 w1777982921
+R0
+Z5 8/home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd
+Z6 F/home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd
+l0
+L27 1
+VC35U_>aUDnm00;;A]TGc=3
+!s100 a?DGlGViilA_UV`5=Y`l;2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1777983185
+!i10b 0
+Z9 !s108 1777983185.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd|
+!s107 /home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Eseqaforloop
+R4
+R1
+R2
+!i122 0
+R0
+R5
+R6
+l0
+L4 1
+VdCMEl@IMAHYIa_=hTo1FP3
+!s100 Rn4zLGgEO74VeNJEAU22[2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 /home/aluno/ELDII/aula_05-05-26/seqAForLoop.vhd|
+!i113 1
+R11
+R12
+Acode_v1
+R1
+R2
+R3
+!i122 0
+l14
+L13 13
+VK:h5Z^<e_Q@PfMNaMFG6[0
+!s100 Y@Fo9eH;5[M19IMN9YhYP1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R13
+!i113 1
+R11
+R12
