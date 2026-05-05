@@ -1,0 +1,29 @@
+# Current time Wed Apr 29 23:12:34 2026
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# Signature = fa4d3e95ccc4dcaa70644b276588aa2d
+# 0    0x087dd517: '<unknown (@0x87dd517)>'
+# 1    0x087dea22: '<unknown (@0x87dea22)>'
+# 2    0x087e0abe: '<unknown (@0x87e0abe)>'
+# 3    0x08a9a379: '<unknown (@0x8a9a379)>'
+# 4    0x09235bba: '<unknown (@0x9235bba)>'
+# 5    0x0923b143: '<unknown (@0x923b143)>'
+# 6    0x0923b25a: '<unknown (@0x923b25a)>'
+# 7    0x0923c901: '<unknown (@0x923c901)>'
+# 8    0x0923cc76: '<unknown (@0x923cc76)>'
+# 9    0x08d20668: '<unknown (@0x8d20668)>'
+# 10   0x092e4977: '<unknown (@0x92e4977)>'
+# 11   0x0933ec3c: '<unknown (@0x933ec3c)>'
+# 12   0x09341a98: '<unknown (@0x9341a98)>'
+# 13   0x092fde68: '<unknown (@0x92fde68)>'
+# 14   0x092fe175: '<unknown (@0x92fe175)>'
+# 15   0x090ec6c0: '<unknown (@0x90ec6c0)>'
+# 16   0x0879fb79: '<unknown (@0x879fb79)>'
+# 17   0x0863aebb: '<unknown (@0x863aebb)>'
+# End of Stack Trace
+
+

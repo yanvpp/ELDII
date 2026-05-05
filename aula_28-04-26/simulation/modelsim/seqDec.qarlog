@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim/seqDec.qarlog
+
+Archive:	/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim/seqDec.qar
+Date:		Wed Apr 29 23:46:46 2026
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/yan.pp2006/ELDIGII/aula_28-04-26/prints/RLT_correcao.png
+/home/yan.pp2006/ELDIGII/aula_28-04-26/prints/RTL_exemplo.png
+/home/yan.pp2006/ELDIGII/aula_28-04-26/prints/warning_correcao1.png
+/home/yan.pp2006/ELDIGII/aula_28-04-26/prints/warnings_exemplo.png
+/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.qpf
+/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.qsf
+/home/yan.pp2006/ELDIGII/aula_28-04-26/seqDec.vhd
+/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim/tb_correcao1.do
+/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim/tb_correcao2.do
+/home/yan.pp2006/ELDIGII/aula_28-04-26/simulation/modelsim/tb_exemplo.do
+/opt/altera/intelFPGA/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
