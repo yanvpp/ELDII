@@ -1,4 +1,5 @@
-![GitHub License](https://img.shields.io/github/license/yanvpp/POO) ![GitHub repo size](https://img.shields.io/github/repo-size/yanvpp/ELDII)
+![GitHub top language](https://img.shields.io/github/languages/top/yanvpp/ELDII)
+![GitHub License](https://img.shields.io/github/license/yanvpp/POO) ![GitHub repo size](https://img.shields.io/github/repo-size/yanvpp/ELDII) 
 
 
 # Eletrônica Digital II
