@@ -24,7 +24,7 @@ begin
 				when "0111" => hex0 <= "0001111";
 				when "1000" => hex0 <= "0000000";
 				when "1001" => hex0 <= "0001100";
-				when others => hex0 <= "0000110";
+				when others => hex0 <= "0110000";
 			end case;
 	end process;
 end architecture;

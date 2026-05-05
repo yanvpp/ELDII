@@ -8,26 +8,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/yan.pp2006/ELDII/aula_30-04-26/simulation/modelsim
+Z0 d/home/aluno/ELDII/aula_30-04-26/simulation/modelsim
 Ebcdtossd
-Z1 w1777941204
+Z1 w1777979483
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 3
+!i122 2
 R0
-Z4 8/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd
-Z5 F/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd
+Z4 8/home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd
+Z5 F/home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd
 l0
 L4 1
 VJ]g9_IBmH0T<14F[nTO^I0
 !s100 m1DbaQIC[1dfa5ieI6<f`2
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1777943197
+Z7 !s110 1777980348
 !i10b 1
-Z8 !s108 1777943197.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd|
-Z10 !s107 /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd|
+Z8 !s108 1777980348.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd|
+Z10 !s107 /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -35,11 +35,11 @@ Acode_v1
 R2
 R3
 Z13 DEx4 work 8 bcdtossd 0 22 J]g9_IBmH0T<14F[nTO^I0
-!i122 3
+!i122 2
 l13
 Z14 L12 19
-Z15 VFS?B>Dd``Z5BigbiH4Y093
-Z16 !s100 [0>WbFKinD5LjLTok06N=2
+Z15 VFOPPSidGEOni;h<mn`NTB3
+Z16 !s100 ach4R?6;i^S1lmQ_LeWPO0
 R6
 31
 R7
@@ -53,11 +53,11 @@ R12
 Cifsc_v1
 ebcdtossd
 acode_v1
-DAx4 work 8 bcdtossd 7 code_v1 22 FS?B>Dd``Z5BigbiH4Y093
+DAx4 work 8 bcdtossd 7 code_v1 22 FOPPSidGEOni;h<mn`NTB3
 R2
 R3
 R13
-!i122 3
+!i122 2
 R1
 R0
 R4

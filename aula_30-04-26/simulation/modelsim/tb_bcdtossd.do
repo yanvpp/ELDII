@@ -2,7 +2,7 @@ vlib rtl_work
 
 vmap work rtl_work 
 
-vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}
+vcom -93 -work work {/home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd}
 
 vsim work.ifsc_v1
 
@@ -31,6 +31,16 @@ run
 force -freeze sim:/bcdtossd/sw 1001 0
 run
 force -freeze sim:/bcdtossd/sw 1010 0
+run
+force -freeze sim:/bcdtossd/sw 1011 0
+run
+force -freeze sim:/bcdtossd/sw 1100 0
+run
+force -freeze sim:/bcdtossd/sw 1101 0
+run
+force -freeze sim:/bcdtossd/sw 1110 0
+run
+force -freeze sim:/bcdtossd/sw 1111 0
 run
 
 

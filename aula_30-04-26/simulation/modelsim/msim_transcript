@@ -6,13 +6,12 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # 
-# vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}
+# vcom -93 -work work {/home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:46:57 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
+# Start time: 08:13:25 on May 05,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,13 +20,32 @@
 # -- Compiling configuration ifsc_v1
 # -- Loading entity bcdtossd
 # -- Loading architecture code_v1 of bcdtossd
-# End time: 21:46:57 on May 04,2026, Elapsed time: 0:00:00
+# End time: 08:13:26 on May 05,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
+do tb_bcdtossd.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:13:34 on May 05,2026
+# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 08:13:34 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/vcom failed.
+# Error in macro ./tb_bcdtossd.do line 5
+# /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}"
 vsim work.ifsc_v1
-# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.12.74+deb13+1-amd64
+# vsim work.ifsc_v1 
+# Start time: 08:13:47 on May 05,2026
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-44-amd64
 # //
 # //  Copyright 1991-2020 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -40,155 +58,46 @@ vsim work.ifsc_v1
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-force -freeze sim:/bcdtossd/sw 0000 0
-run
-force -freeze sim:/bcdtossd/sw 0001 0
-run
-force -freeze sim:/bcdtossd/sw 0010 0
-run
-force -freeze sim:/bcdtossd/sw 0011 0
-run
-force -freeze sim:/bcdtossd/sw 0100 0
-run
-force -freeze sim:/bcdtossd/sw 0101 0
-run
-force -freeze sim:/bcdtossd/sw 0110 0
-run
-noforce sim:/bcdtossd/sw
-force -freeze sim:/bcdtossd/sw 0111 0
-run
-force -freeze sim:/bcdtossd/sw 1000 0
-run
-force -freeze sim:/bcdtossd/sw 1001 0
-run
-do tb_bcdtossd.do
-do tb_bcdtossd.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:55:00 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 21:55:00 on May 04,2026, Elapsed time: 0:00:00
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ifsc_v1
+# Loading work.bcdtossd(code_v1)
+vsim work.ifsc_v1
+# End time: 08:13:51 on May 05,2026, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
-# 
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:55:01 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 21:55:01 on May 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:55:02 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 21:55:02 on May 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-do tb_bcdtossd.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:00:07 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 22:00:07 on May 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:00:08 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 22:00:08 on May 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# vsim work.ifsc_v1 
+# Start time: 08:13:51 on May 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ifsc_v1
+# Loading work.bcdtossd(code_v1)
 do tb_bcdtossd.do
 # ** Warning: (vlib-34) Library already exists at "rtl_work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Modifying modelsim.ini
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:01:25 on May 04,2026
+# Start time: 08:14:16 on May 05,2026
 # vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bcdtossd
-# -- Compiling architecture code_v1 of bcdtossd
-# -- Compiling configuration ifsc_v1
-# -- Loading entity bcdtossd
-# -- Loading architecture code_v1 of bcdtossd
-# End time: 22:01:25 on May 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# ** Error: (vcom-7) Failed to open design unit file "/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 08:14:16 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/vcom failed.
+# Error in macro ./tb_bcdtossd.do line 5
+# /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}"
 do tb_bcdtossd.do
 # ** Warning: (vlib-34) Library already exists at "rtl_work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Modifying modelsim.ini
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:05:08 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
+# Start time: 08:16:49 on May 05,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -197,16 +106,25 @@ do tb_bcdtossd.do
 # -- Compiling configuration ifsc_v1
 # -- Loading entity bcdtossd
 # -- Loading architecture code_v1 of bcdtossd
-# End time: 22:05:08 on May 04,2026, Elapsed time: 0:00:00
+# End time: 08:16:49 on May 05,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 08:16:49 on May 05,2026, Elapsed time: 0:02:58
+# Errors: 1, Warnings: 0
+# vsim work.ifsc_v1 
+# Start time: 08:16:49 on May 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ifsc_v1
+# Loading work.bcdtossd(code_v1)
 do tb_bcdtossd.do
 # ** Warning: (vlib-34) Library already exists at "rtl_work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Modifying modelsim.ini
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:06:37 on May 04,2026
-# vcom -reportprogress 300 -93 -work work /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd 
+# Start time: 08:25:48 on May 05,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -215,5 +133,16 @@ do tb_bcdtossd.do
 # -- Compiling configuration ifsc_v1
 # -- Loading entity bcdtossd
 # -- Loading architecture code_v1 of bcdtossd
-# End time: 22:06:37 on May 04,2026, Elapsed time: 0:00:00
+# End time: 08:25:48 on May 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:25:48 on May 05,2026, Elapsed time: 0:08:59
+# Errors: 0, Warnings: 0
+# vsim work.ifsc_v1 
+# Start time: 08:25:48 on May 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ifsc_v1
+# Loading work.bcdtossd(code_v1)
+# End time: 08:26:53 on May 05,2026, Elapsed time: 0:01:05
 # Errors: 0, Warnings: 0

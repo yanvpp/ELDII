@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bcdtossd
-Mon May  4 21:35:17 2026
+Tue May  5 08:11:30 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May  4 21:35:17 2026           ;
+; Analysis & Synthesis Status        ; Successful - Tue May  5 08:11:30 2026           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; bcdtossd                                        ;
 ; Top-level Entity Name              ; bcdtossd                                        ;
@@ -151,7 +151,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
+; Number detected on machine ; 32          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -162,13 +162,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------+---------+
-; bcdtossd.vhd                     ; yes             ; Auto-Found VHDL File  ; /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
+; bcdtossd.vhd                     ; yes             ; Auto-Found VHDL File  ; /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd ;         ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -259,14 +259,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
-    Info: Processing started: Mon May  4 21:35:11 2026
+    Info: Processing started: Tue May  5 08:11:25 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bcdtossd -c bcdtossd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Warning (12125): Using design file bcdtossd.vhd, which is not specified as a design file for the current project, but contains definitions for 3 design units and 1 entities in project
-    Info (12022): Found design unit 1: bcdtossd-code_v1 File: /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd Line: 12
-    Info (12022): Found design unit 2: ifsc_v1 File: /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd Line: 32
-    Info (12023): Found entity 1: bcdtossd File: /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd Line: 4
+    Info (12022): Found design unit 1: bcdtossd-code_v1 File: /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd Line: 12
+    Info (12022): Found design unit 2: ifsc_v1 File: /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd Line: 32
+    Info (12023): Found entity 1: bcdtossd File: /home/aluno/ELDII/aula_30-04-26/bcdtossd.vhd Line: 4
 Info (12127): Elaborating entity "bcdtossd" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +276,9 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 420 megabytes
-    Info: Processing ended: Mon May  4 21:35:17 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 434 megabytes
+    Info: Processing ended: Tue May  5 08:11:30 2026
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:11
 
 
