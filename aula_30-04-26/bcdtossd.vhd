@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity bcd2ssd is
+entity bcdtossd is
 
 	port (
 			sw : in std_logic_vector(3 downto 0);
 			hex0: out bit_vector (6 downto 0)
 			);
-end bcd2ssd;
+end bcdtossd;
 
-architecture code_v1 of bcd2ssd is
+architecture code_v1 of bcdtossd is
 begin
 	process(sw)
 		begin
@@ -29,6 +29,6 @@ begin
 	end process;
 end architecture;
 
-configuration ifsc_v1 of bcd2ssd is
+configuration ifsc_v1 of bcdtossd is
 	for code_v1 end for;
 end configuration;

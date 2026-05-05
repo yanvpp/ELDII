@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/yan.pp2006/ELDII/aula_30-04-26/simulation/modelsim
+Ebcdtossd
+Z1 w1777941204
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd
+Z5 F/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd
+l0
+L4 1
+VJ]g9_IBmH0T<14F[nTO^I0
+!s100 m1DbaQIC[1dfa5ieI6<f`2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1777943197
+!i10b 1
+Z8 !s108 1777943197.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd|
+Z10 !s107 /home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Acode_v1
+R2
+R3
+Z13 DEx4 work 8 bcdtossd 0 22 J]g9_IBmH0T<14F[nTO^I0
+!i122 3
+l13
+Z14 L12 19
+Z15 VFS?B>Dd``Z5BigbiH4Y093
+Z16 !s100 [0>WbFKinD5LjLTok06N=2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Cifsc_v1
+ebcdtossd
+acode_v1
+DAx4 work 8 bcdtossd 7 code_v1 22 FS?B>Dd``Z5BigbiH4Y093
+R2
+R3
+R13
+!i122 3
+R1
+R0
+R4
+R5
+l0
+L32 1
+VkRI>h01LefAl3VbEJM76i3
+!s100 oL8:74iZfEXUm]4B@SA?d2
+R6
+31
+R7
+!i10b 0
+R8
+R9
+R10
+!i113 1
+R11
+R12

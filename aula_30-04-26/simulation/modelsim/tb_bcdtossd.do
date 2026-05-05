@@ -1,0 +1,36 @@
+vlib rtl_work
+
+vmap work rtl_work 
+
+vcom -93 -work work {/home/yan.pp2006/ELDII/aula_30-04-26/bcdtossd.vhd}
+
+vsim work.ifsc_v1
+
+add wave -position insertpoint  \
+sim:/bcdtossd/sw \
+sim:/bcdtossd/hex0 
+
+force -freeze sim:/bcdtossd/sw 0000 0
+run
+force -freeze sim:/bcdtossd/sw 0001 0
+run
+force -freeze sim:/bcdtossd/sw 0010 0
+run
+force -freeze sim:/bcdtossd/sw 0011 0
+run
+force -freeze sim:/bcdtossd/sw 0100 0
+run
+force -freeze sim:/bcdtossd/sw 0101 0
+run
+force -freeze sim:/bcdtossd/sw 0110 0
+run
+force -freeze sim:/bcdtossd/sw 0111 0
+run
+force -freeze sim:/bcdtossd/sw 1000 0
+run
+force -freeze sim:/bcdtossd/sw 1001 0
+run
+force -freeze sim:/bcdtossd/sw 1010 0
+run
+
+
