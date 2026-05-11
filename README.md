@@ -10,3 +10,4 @@
 - [28/04/2026](aula_28-04-26) - Declarações sequenciais
 - [30/04/2026](aula_30-04-26) - BCD para 7 segmentos com case
 - [05/05/2026](aula_05-05-26) - Verificador de paridade com for loop
+- [07/05/2026](aula_07-05-26) - Flip-Flop D com sinal de enable e reset assíncrono
