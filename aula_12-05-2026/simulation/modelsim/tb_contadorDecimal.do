@@ -16,10 +16,6 @@ force -freeze sim:/contadordecimal/reset 1 0
 force -freeze sim:/contadordecimal/clk 1 0
 run
 
-force -freeze sim:/contadordecimal/reset 0 0
-force -freeze sim:/contadordecimal/clk 1 0
-run
-
 force -freeze sim:/contadordecimal/clk 0 0
 force -freeze sim:/contadordecimal/reset 0 0
 run
@@ -37,6 +33,81 @@ force -freeze sim:/contadordecimal/clk 0 0
 run
 
 force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
+run
+
+force -freeze sim:/contadordecimal/clk 1 0
+run
+
+force -freeze sim:/contadordecimal/clk 0 0
 run
 
 wave zoom full
