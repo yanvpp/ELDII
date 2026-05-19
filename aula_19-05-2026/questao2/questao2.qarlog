@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	/home/aluno/ELDII/aula_19-05-2026/questao2/questao2.qarlog
+
+Archive:	/home/aluno/ELDII/aula_19-05-2026/questao2/questao2.qar
+Date:		Tue May 19 08:19:40 2026
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/aluno/ELDII/aula_19-05-2026/questao2/questao2.qpf
+/home/aluno/ELDII/aula_19-05-2026/questao2/questao2.qsf
+/home/aluno/ELDII/aula_19-05-2026/questao2/questao2.vhd
+/home/aluno/ELDII/aula_19-05-2026/questao2/simulation/modelsim/tb_questao2.do
+/opt/altera/intelFPGA/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

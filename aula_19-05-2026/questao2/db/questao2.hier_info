@@ -1,0 +1,12 @@
+|questao2
+clk => q_contador[0].CLK
+clk => q_contador[1].CLK
+clk => q_contador[2].CLK
+reset => q_contador[0].ACLR
+reset => q_contador[1].ACLR
+reset => q_contador[2].ACLR
+q[0] <= q_contador[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q_contador[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q_contador[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
