@@ -7,10 +7,8 @@ vsim work.mux4x1
 
 vsim work.logica_pura
 
-add wave -position insertpoint  \
-sim:/mux4x1/X \
-sim:/mux4x1/Sel \
-sim:/mux4x1/Y
+add wave -position insertpoint sim:/mux4x1/*
+
 force -freeze sim:/mux4x1/X 0001 0
 run
 force -freeze sim:/mux4x1/X 0010 0
