@@ -1,0 +1,54 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELDII/aula_19-05-2026/questao3/simulation/modelsim
+Equestao3
+Z1 w1779189934
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8../../questao3.vhd
+Z6 F../../questao3.vhd
+l0
+L5 1
+VEX6AR@7zUcAE>ggcQ6jJJ1
+!s100 dZ6;m5[kW[<zNk85:f3Q71
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1779190387
+!i10b 1
+Z9 !s108 1779190387.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../questao3.vhd|
+!s107 ../../questao3.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Acontadorbinario
+R2
+R3
+R4
+Z13 DEx4 work 8 questao3 0 22 EX6AR@7zUcAE>ggcQ6jJJ1
+!i122 1
+l17
+Z14 L14 28
+Z15 V3=6VAWkFIQA8^3X^[IlS_0
+Z16 !s100 aGMKZhA]X0cQE43`7=i@V2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+Z17 !s107 ../../questao3.vhd|
+!i113 1
+R11
+R12
