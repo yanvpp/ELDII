@@ -2,7 +2,7 @@ vlib rtl_work
 
 vmap work rtl_work
 
-vcom -93 -work work {/home/yan.pp2006/ELDII/aula_05-05-26/seqAForLoop.vhd}
+vcom -93 -work work {../../seqAForLoop.vhd}
 
 vsim work.seqaforloop(code_v1)
 
