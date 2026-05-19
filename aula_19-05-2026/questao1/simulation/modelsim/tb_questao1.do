@@ -1,0 +1,87 @@
+vlib rtl_work
+vmap work rtl_work 
+vcom -93 -work work {../../questao1.vhd}
+vsim work.questao1(deslocadoruniversal)
+
+add wave -position insertpoint sim:/questao1/* 
+
+# RESET
+force -freeze sim:/questao1/reset 1 0
+force -freeze sim:/questao1/control 00 0
+force -freeze sim:/questao1/palavra 0000 0
+force -freeze sim:/questao1/d_to_right 0 0
+force -freeze sim:/questao1/d_to_left 0 0
+force -freeze sim:/questao1/clk 0 0
+run
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# INSERINDO PALAVRA
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 11 0
+force -freeze sim:/questao1/palavra 1010 0
+force -freeze sim:/questao1/d_to_right 0 0
+force -freeze sim:/questao1/d_to_left 0 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# DESLOCAR PARA DIREITA BIT 1
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 01 0
+force -freeze sim:/questao1/palavra 1010 0
+force -freeze sim:/questao1/d_to_right 1 0
+force -freeze sim:/questao1/d_to_left 0 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# DESLOCAR PARA DIREITA 0
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 01 0
+force -freeze sim:/questao1/palavra 1010 0
+force -freeze sim:/questao1/d_to_right 0 0
+force -freeze sim:/questao1/d_to_left 0 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# DESLOCAR PARA ESQUERDA BIT 1
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 10 0
+force -freeze sim:/questao1/palavra 1010 0
+force -freeze sim:/questao1/d_to_right 0 0
+force -freeze sim:/questao1/d_to_left 1 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# DESLOCAR PARA DIREITA BIT 0
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 10 0
+force -freeze sim:/questao1/palavra 1010 0
+force -freeze sim:/questao1/d_to_right 0 0
+force -freeze sim:/questao1/d_to_left 0 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+# PAUSAR LEITURA, IGNORA AS ENTRADAS
+force -freeze sim:/questao1/reset 0 0
+force -freeze sim:/questao1/control 00 0
+force -freeze sim:/questao1/palavra 1111 0
+force -freeze sim:/questao1/d_to_right 1 0
+force -freeze sim:/questao1/d_to_left 1 0
+force -freeze sim:/questao1/clk 1 0
+run
+force -freeze sim:/questao1/clk 0 0
+run
+
+wave zoom full
