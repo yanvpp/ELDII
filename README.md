@@ -11,5 +11,5 @@ Repositório destinado às atividadades realizadas na disciplina de Eletrônica 
 - [30/04/2026](aula_30-04-26) - BCD para 7 segmentos com case
 - [05/05/2026](aula_05-05-26) - Verificador de paridade com for loop
 - [07/05/2026](aula_07-05-26) - Flip-Flop D com sinal de enable e reset assíncrono
-- [12/05/2026](aula_12-05-26) - Test-benches para verificação de códigos
-- [19/05/2026](aula_19-05-26) - Lista sobre circuitos sequenciais com VHDL
+- [12/05/2026](aula_12-05-2026) - Test-benches para verificação de códigos
+- [19/05/2026](aula_19-05-2026) - Lista sobre circuitos sequenciais com VHDL
