@@ -13,3 +13,4 @@ Repositório destinado às atividadades realizadas na disciplina de Eletrônica 
 - [07/05/2026](aula_07-05-26) - Flip-Flop D com sinal de enable e reset assíncrono
 - [12/05/2026](aula_12-05-2026) - Test-benches para verificação de códigos
 - [19/05/2026](aula_19-05-2026) - Lista sobre circuitos sequenciais com VHDL
+- [21/05/2026](aula_21-05-2026) - Gated clock, clock derivado e consumo de energia
