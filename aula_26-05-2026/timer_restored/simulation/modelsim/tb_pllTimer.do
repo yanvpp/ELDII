@@ -1,5 +1,6 @@
 vlib rtl_work
 vmap work rtl_work
+vcom -93 -work work {../../list_09_05_06_timer_CORRIGIDO_50mhz.vhd}
 vcom -93 -work work {../../top_timer_de2_115.vhd}
 vsim work.timer
 
