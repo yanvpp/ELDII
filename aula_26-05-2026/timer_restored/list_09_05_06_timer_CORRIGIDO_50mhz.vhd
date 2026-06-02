@@ -7,7 +7,8 @@ use ieee.numeric_std.all;
 entity timer is
 	port(
 		clk, reset: in std_logic;
-		hour, sec, min: out std_logic_vector(5 downto 0)
+		sec, min: out std_logic_vector(5 downto 0);
+		hour : out std_logic_vector(4 downto 0)
 	);
 end timer;
 
@@ -25,14 +26,14 @@ begin
 		begin
 		if (reset='1') then
 			r_reg <= (others=>'0');
-			h_reg <= (others=>'0');
 			s_reg <= (others=>'0');
 			m_reg <= (others=>'0');
+			h_reg <= (others=>'0');
 		elsif (clk'event and clk='1') then
 			r_reg <= r_next;
-			h_reg <= h_next;
 			s_reg <= s_next;
 			m_reg <= m_next;
+			h_reg <= h_next;
 		end if;
 	end process;
 	

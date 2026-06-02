@@ -18,7 +18,14 @@ end entity;
 
 architecture top of top_timer_de2_115 is
 
-  component timer
+	component pll_timer is
+		port (
+			inclk0 : in std_logic := '0';
+			c0 : out std_logic
+			);
+	end component;
+
+  component timer is
     port (
       clk, reset : in std_logic;
       hour : out std_logic_vector(4 downto 0);
@@ -49,24 +56,31 @@ architecture top of top_timer_de2_115 is
   signal min, sec    : std_logic_vector(5 downto 0);
   signal r_reg, r_next     : unsigned(22 downto 0);
   signal reset             : std_logic;
+  signal clk_2khz : std_logic;
 
 begin
 
   reset <= not KEY(0);
+  
+  pll_timer_inst : pll_timer port map (
+		inclk0 => CLOCK_50,
+		c0 => clk_2khz
+		);
 
   t0 : entity work.timer(single_clock_arch)
   port map(
     clk   => CLOCK_50,
     reset => reset,
-	 hour  => hour,
     sec   => sec,
-    min   => min);
+    min   => min,
+	 hour  => hour
+	 );
 	 
   bin2bcd0: bin2bcd
   generic map (
     N => 6)
   port map (
-    clk => CLOCK_50, 
+    clk => clk_2khz, 
     reset => reset,
     binary_in => sec,
     bcd0 => secU,
@@ -80,7 +94,7 @@ begin
 	generic map (
 		N => 6)
 	port map (
-		clk => CLOCK_50, 
+		clk => clk_2khz, 
 		reset => reset,
 		binary_in => min,
 		bcd0 => minU,
@@ -92,9 +106,9 @@ begin
 	 
 	bin2bcd2: bin2bcd
 	generic map (
-		N => 6)
+		N => 5)
 	port map (
-		clk => CLOCK_50, 
+		clk => clk_2khz, 
 		reset => reset,
 		binary_in => hour,
 		bcd0 => hourU,
@@ -107,33 +121,39 @@ begin
 	bcd0 : bcd2ssd
 	port map(
 		BCD => secU,
-		SSD => HEX0);
+		SSD => HEX0
+		);
 
 	bcd1 : bcd2ssd
 	port map(
 		BCD => secT,
-		SSD => HEX1);
+		SSD => HEX1
+		);
 
 	bcd2 : bcd2ssd
 	port map(
 		BCD => minU,
-		SSD => HEX2);
+		SSD => HEX2
+		);
 
 	bcd3 : bcd2ssd
 	port map(
 		BCD => minT,
-		SSD => HEX3);
+		SSD => HEX3
+		);
 	
 	bcd4 : bcd2ssd
 	
 	port map(
 		BCD => hourU,
-		SSD => HEX4);
+		SSD => HEX4
+		);
 
 	bcd5 : bcd2ssd
 	
 	port map(
 		BCD => hourT,
-		SSD => HEX5);
+		SSD => HEX5
+		);
 
 end top;

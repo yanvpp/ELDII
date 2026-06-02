@@ -1,5 +1,5 @@
 Flow report for timer
-Tue May 26 09:23:47 2026
+Mon Jun  1 21:30:12 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue May 26 09:23:47 2026          ;
+; Flow Status                        ; Successful - Mon Jun  1 21:30:12 2026           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; timer                                           ;
 ; Top-level Entity Name              ; top_timer_de2_115                               ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/26/2026 09:23:42 ;
+; Start date & time ; 06/01/2026 21:30:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; timer               ;
 +-------------------+---------------------+
@@ -76,13 +76,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 185410946189304.177979822235111        ; --            ; --                ; --             ;
+; COMPILER_SIGNATURE_ID               ; 206863106536974.178036020809694        ; --            ; --                ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --                ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --                ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS        ; NOT_USED                               ; --            ; --                ; eda_simulation ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --                ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --             ;
+; MISC_FILE                           ; pll_timer_inst.vhd                     ; --            ; --                ; --             ;
+; MISC_FILE                           ; pll_timer.cmp                          ; --            ; --                ; --             ;
+; MISC_FILE                           ; pll_timer.ppf                          ; --            ; --                ; --             ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --                ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --                ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --                ; --             ;
@@ -104,18 +107,18 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 723 MB              ; 00:00:11                           ;
-; Total                  ; 00:00:05     ; --                      ; --                  ; 00:00:11                           ;
+; Analysis & Elaboration ; 00:00:04     ; 1.0                     ; 730 MB              ; 00:00:05                           ;
+; Total                  ; 00:00:04     ; --                      ; --                  ; 00:00:05                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                               ;
-+------------------------+---------------------+------------------+------------+----------------+
-; Module Name            ; Machine Hostname    ; OS Name          ; OS Version ; Processor type ;
-+------------------------+---------------------+------------------+------------+----------------+
-; Analysis & Elaboration ; sje-lin-sidi-918562 ; Debian GNU/Linux ; 12         ; x86_64         ;
-+------------------------+---------------------+------------------+------------+----------------+
++----------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                    ;
++------------------------+--------------------------+------------------+------------+----------------+
+; Module Name            ; Machine Hostname         ; OS Name          ; OS Version ; Processor type ;
++------------------------+--------------------------+------------------+------------+----------------+
+; Analysis & Elaboration ; TELE-Quartus-Matlab-novo ; Debian GNU/Linux ; 13         ; x86_64         ;
++------------------------+--------------------------+------------------+------------+----------------+
 
 
 ------------

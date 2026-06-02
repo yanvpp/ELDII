@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected VHDL design -- VHDL simulation models will be used
+Info: NativeLink has detected a mixed Verilog and VHDL design -- verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
@@ -8,8 +8,7 @@ Family                :  cycloneive
 Quartus root          :  /opt/altera/intelFPGA/20.1/quartus/linux64/
 Quartus sim root      :  /opt/altera/intelFPGA/20.1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
-Simulation Language   :  vhdl
-Version               :  93
+Simulation Language   :  verilog
 Simulation Mode       :  GUI
 Sim Output File       :  
 Sim SDF file          :  
