@@ -14,3 +14,4 @@ Repositório destinado às atividadades realizadas na disciplina de Eletrônica 
 - [12/05/2026](aula_12-05-2026) - Test-benches para verificação de códigos
 - [19/05/2026](aula_19-05-2026) - Lista sobre circuitos sequenciais com VHDL
 - [21/05/2026](aula_21-05-2026) - Gated clock, clock derivado e consumo de energia
+- [26/05/2026](aula_26-05-2026) - Adicionando PLL de 50MHz no timer
