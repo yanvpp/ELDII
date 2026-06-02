@@ -9,26 +9,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/simulation/modelsim
+Z0 d/home/aluno/ELDII/aula_26-05-2026/timer_restored/simulation/modelsim
 Ebcd2ssd
-Z1 w1779915769
+Z1 w1780396278
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 2
 R0
-Z4 8/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd
-Z5 F/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd
+Z4 8/home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd
+Z5 F/home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd
 l0
 L4 1
 V5GWThJ2ijE`QC;e3olWnd0
 !s100 f6e0n9AS<^:[d8E^``WLW0
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1780360334
+Z7 !s110 1780399092
 !i10b 1
-Z8 !s108 1780360334.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd|
-Z10 !s107 /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd|
+Z8 !s108 1780399092.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd|
+Z10 !s107 /home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -59,19 +59,19 @@ R2
 R3
 !i122 3
 R0
-Z15 8/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd
-Z16 F/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd
+Z15 8/home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd
+Z16 F/home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd
 l0
 L7 1
 V1cM=eI2HCb0F3PTOoCz`Z3
 !s100 >kXk<ZUi7VU1110gkK@:<2
 R6
 31
-Z17 !s110 1780360335
+R7
 !i10b 1
-Z18 !s108 1780360335.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd|
-Z20 !s107 /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd|
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd|
+Z18 !s107 /home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd|
 !i113 1
 R11
 R12
@@ -88,33 +88,33 @@ V;A17?jzP@I?K=Z3o>iZ_c2
 !s100 TmNB]>J911Hi5?EJz77XU2
 R6
 31
-R17
+R7
 !i10b 1
+R8
+R17
 R18
-R19
-R20
 !i113 1
 R11
 R12
 Epll_timer
-Z21 w1780360047
+R1
 R2
 R3
 !i122 5
 R0
-Z22 8/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd
-Z23 F/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd
+Z19 8/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd
+Z20 F/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd
 l0
 L43 1
 VNadL[jFJFgNQXL@FXFWTJ2
 !s100 C26IZ<1cZdA6J^F?l6[1C2
 R6
 31
-Z24 !s110 1780360339
+R7
 !i10b 1
-Z25 !s108 1780360339.000000
-Z26 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd|
-Z27 !s107 /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd|
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd|
+Z22 !s107 /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd|
 !i113 1
 R11
 R12
@@ -129,122 +129,122 @@ VCK4@?3fL_icfcEh2G=43:0
 !s100 HMbUOh][F=]:^Z1A32f_03
 R6
 31
-R24
+R7
 !i10b 1
-R25
-R26
-R27
+R8
+R21
+R22
 !i113 1
 R11
 R12
 vpll_timer_altpll
-!s110 1780360332
+R7
 !i10b 1
 !s100 @APQFTIh3E<=zO:RcZTCW3
 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I0A2;1BXPJ]nn0l^`EDT0]1
+IRdSn0B?8d4BJeFjVIV2Df3
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1780360211
-8/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v
-F/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v
+R1
+8/home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v
+F/home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v
 !i122 0
 L0 30 63
 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1780360332.000000
-!s107 /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db|/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v|
+R8
+!s107 /home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/aluno/ELDII/aula_26-05-2026/timer_restored/db|/home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v|
 !i113 1
 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db
+!s92 -vlog01compat -work work +incdir+/home/aluno/ELDII/aula_26-05-2026/timer_restored/db
 tCvgOpt 0
 Etimer
-Z28 w1780336940
-Z29 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z23 w1780398938
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
-!i122 1
+!i122 6
 R0
-Z30 8/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd
-Z31 F/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd
+Z25 8../../list_09_05_06_timer_CORRIGIDO_50mhz.vhd
+Z26 F../../list_09_05_06_timer_CORRIGIDO_50mhz.vhd
 l0
 L7 1
 VYe7L0<c<8;I9_]G@:3dmH2
 !s100 L72<[kk:5F3aFf4W5V:PN1
 R6
 31
-Z32 !s110 1780360333
+Z27 !s110 1780399108
 !i10b 1
-Z33 !s108 1780360333.000000
-Z34 !s90 -reportprogress|300|-93|-work|work|/home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd|
-Z35 !s107 /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd|
+Z28 !s108 1780399108.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|../../list_09_05_06_timer_CORRIGIDO_50mhz.vhd|
+Z30 !s107 ../../list_09_05_06_timer_CORRIGIDO_50mhz.vhd|
 !i113 1
 R11
 R12
 Asingle_clock_arch
-R29
+R24
 R2
 R3
-Z36 DEx4 work 5 timer 0 22 Ye7L0<c<8;I9_]G@:3dmH2
-!i122 1
+Z31 DEx4 work 5 timer 0 22 Ye7L0<c<8;I9_]G@:3dmH2
+!i122 6
 l23
-L15 56
-V7Q]eBoXF3G1cLge_n>YlG2
-!s100 Y<S0Bc=[FL5@ef_BTcEUm1
+L15 59
+VU>o5mnCSh5>3kbbM^NnbL3
+!s100 iHEaWde7_?<F<@E5oKVlB0
 R6
 31
-R32
+R27
 !i10b 1
-R33
-R34
-R35
+R28
+R29
+R30
 !i113 1
 R11
 R12
 Etop_timer_de2_115
-Z37 w1780360206
-R29
+R1
+R24
 R2
 R3
 !i122 7
 R0
-Z38 8../../top_timer_de2_115.vhd
-Z39 F../../top_timer_de2_115.vhd
+Z32 8../../top_timer_de2_115.vhd
+Z33 F../../top_timer_de2_115.vhd
 l0
 L5 1
 VVN5eLGahW0jDFmSkn03]O2
 !s100 j_[RaRz[EMV4gg?`R`CBb1
 R6
 31
-Z40 !s110 1780360461
+R27
 !i10b 1
-Z41 !s108 1780360461.000000
-Z42 !s90 -reportprogress|300|-93|-work|work|../../top_timer_de2_115.vhd|
-Z43 !s107 ../../top_timer_de2_115.vhd|
+R28
+Z34 !s90 -reportprogress|300|-93|-work|work|../../top_timer_de2_115.vhd|
+!s107 ../../top_timer_de2_115.vhd|
 !i113 1
 R11
 R12
 Atop
-R36
-R29
+R31
+R24
 R2
 R3
-Z44 DEx4 work 17 top_timer_de2_115 0 22 VN5eLGahW0jDFmSkn03]O2
+Z35 DEx4 work 17 top_timer_de2_115 0 22 VN5eLGahW0jDFmSkn03]O2
 !i122 7
 l61
-Z45 L19 141
-Z46 VQ_VJ58BDdYGd?[0;?0_Y]3
-Z47 !s100 ^2C2eXlz:i<QJF[AV9OmQ1
+Z36 L19 141
+Z37 VQ_VJ58BDdYGd?[0;?0_Y]3
+Z38 !s100 ^2C2eXlz:i<QJF[AV9OmQ1
 R6
 31
-R40
+R27
 !i10b 1
-R41
-R42
-R43
+R28
+R34
+Z39 !s107 ../../top_timer_de2_115.vhd|
 !i113 1
 R11
 R12

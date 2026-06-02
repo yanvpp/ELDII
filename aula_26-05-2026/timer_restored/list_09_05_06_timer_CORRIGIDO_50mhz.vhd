@@ -38,10 +38,10 @@ begin
 	end process;
 	
 	-- next-state logic/output logic for mod-50000000 counter
-	r_next <= (others=>'0') when r_reg=49999999 
+	r_next <= (others=>'0') when r_reg=1999 
 			else r_reg + 1;
 	
-	s_en <= '1' when r_reg = 49999999 
+	s_en <= '1' when r_reg = 1999 
 			else '0';
 	
 	-- next state logic/output logic for second divider
@@ -56,6 +56,9 @@ begin
 	m_next <= (others=>'0') when (m_reg=59 and m_en='1') 
 			else (m_reg + 1) when (m_en='1') 
 			else m_reg;
+			
+	h_en <= '1' when (m_reg=59) and (m_en='1') 
+				else '0';
 			
 	-- next-state logic for hour divider
 	h_next <= (others=>'0') when (h_reg=23 and h_en='1')

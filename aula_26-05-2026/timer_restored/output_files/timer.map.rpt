@@ -1,5 +1,5 @@
-Analysis & Elaboration report for timer
-Mon Jun  1 21:30:12 2026
+Analysis & Synthesis report for timer
+Tue Jun  2 08:15:47 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -7,19 +7,30 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration IP Cores Summary
-  5. Parameter Settings for User Entity Instance: pll_timer:pll_timer_inst|altpll:altpll_component
-  6. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd0
-  7. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd1
-  8. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd2
-  9. altpll Parameter Settings by Entity Instance
- 10. Analysis & Elaboration Settings
- 11. Port Connectivity Checks: "bin2bcd:bin2bcd2"
- 12. Port Connectivity Checks: "bin2bcd:bin2bcd1"
- 13. Port Connectivity Checks: "bin2bcd:bin2bcd0"
- 14. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. State Machine - |top_timer_de2_115|bin2bcd:bin2bcd2|state
+ 10. State Machine - |top_timer_de2_115|bin2bcd:bin2bcd1|state
+ 11. State Machine - |top_timer_de2_115|bin2bcd:bin2bcd0|state
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: pll_timer:pll_timer_inst|altpll:altpll_component
+ 16. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd0
+ 17. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd1
+ 18. Parameter Settings for User Entity Instance: bin2bcd:bin2bcd2
+ 19. altpll Parameter Settings by Entity Instance
+ 20. Port Connectivity Checks: "bin2bcd:bin2bcd2"
+ 21. Port Connectivity Checks: "bin2bcd:bin2bcd1"
+ 22. Port Connectivity Checks: "bin2bcd:bin2bcd0"
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -44,23 +55,110 @@ https://fpgasoftware.intel.com/eula.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
+; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Jun  1 21:30:12 2026           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun  2 08:15:47 2026           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; timer                                           ;
 ; Top-level Entity Name              ; top_timer_de2_115                               ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 248                                             ;
+;     Total combinational functions  ; 224                                             ;
+;     Dedicated logic registers      ; 120                                             ;
+; Total registers                    ; 120                                             ;
+; Total pins                         ; 44                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 1                                               ;
 +------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; top_timer_de2_115  ; timer              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone IV GX      ;
+; Maximum processors allowed for parallel compilation              ; All                ;                    ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -68,24 +166,189 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
+; Number detected on machine ; 32          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; list_09_05_06_timer_CORRIGIDO_50mhz.vhd ; yes             ; User VHDL File               ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd ;         ;
+; bcd2ssd.vhd                             ; yes             ; User VHDL File               ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd                             ;         ;
+; bin2bcd.vhd                             ; yes             ; User VHDL File               ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd                             ;         ;
+; top_timer_de2_115.vhd                   ; yes             ; User VHDL File               ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd                   ;         ;
+; pll_timer.vhd                           ; yes             ; User Wizard-Generated File   ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd                           ;         ;
+; altpll.tdf                              ; yes             ; Megafunction                 ; /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/altpll.tdf                    ;         ;
+; aglobal201.inc                          ; yes             ; Megafunction                 ; /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/aglobal201.inc                ;         ;
+; stratix_pll.inc                         ; yes             ; Megafunction                 ; /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/stratix_pll.inc               ;         ;
+; stratixii_pll.inc                       ; yes             ; Megafunction                 ; /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/stratixii_pll.inc             ;         ;
+; cycloneii_pll.inc                       ; yes             ; Megafunction                 ; /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc             ;         ;
+; db/pll_timer_altpll.v                   ; yes             ; Auto-Generated Megafunction  ; /home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v                   ;         ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 248          ;
+;                                             ;              ;
+; Total combinational functions               ; 224          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 134          ;
+;     -- 3 input functions                    ; 27           ;
+;     -- <=2 input functions                  ; 63           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 185          ;
+;     -- arithmetic mode                      ; 39           ;
+;                                             ;              ;
+; Total registers                             ; 120          ;
+;     -- Dedicated logic registers            ; 120          ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 44           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Total PLLs                                  ; 1            ;
+;     -- PLLs                                 ; 1            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 120          ;
+; Total fan-out                               ; 1227         ;
+; Average fan-out                             ; 2.83         ;
++---------------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                            ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name       ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |top_timer_de2_115                         ; 224 (0)             ; 120 (0)                   ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |top_timer_de2_115                                                                                  ; top_timer_de2_115 ; work         ;
+;    |bcd2ssd:bcd0|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd0                                                                     ; bcd2ssd           ; work         ;
+;    |bcd2ssd:bcd1|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd1                                                                     ; bcd2ssd           ; work         ;
+;    |bcd2ssd:bcd2|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd2                                                                     ; bcd2ssd           ; work         ;
+;    |bcd2ssd:bcd3|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd3                                                                     ; bcd2ssd           ; work         ;
+;    |bcd2ssd:bcd4|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd4                                                                     ; bcd2ssd           ; work         ;
+;    |bcd2ssd:bcd5|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bcd2ssd:bcd5                                                                     ; bcd2ssd           ; work         ;
+;    |bin2bcd:bin2bcd0|                      ; 36 (36)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bin2bcd:bin2bcd0                                                                 ; bin2bcd           ; work         ;
+;    |bin2bcd:bin2bcd1|                      ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bin2bcd:bin2bcd1                                                                 ; bin2bcd           ; work         ;
+;    |bin2bcd:bin2bcd2|                      ; 37 (37)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|bin2bcd:bin2bcd2                                                                 ; bin2bcd           ; work         ;
+;    |pll_timer:pll_timer_inst|              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|pll_timer:pll_timer_inst                                                         ; pll_timer         ; work         ;
+;       |altpll:altpll_component|            ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|pll_timer:pll_timer_inst|altpll:altpll_component                                 ; altpll            ; work         ;
+;          |pll_timer_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|pll_timer:pll_timer_inst|altpll:altpll_component|pll_timer_altpll:auto_generated ; pll_timer_altpll  ; work         ;
+;    |timer:t0|                              ; 83 (83)             ; 43 (43)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_timer_de2_115|timer:t0                                                                         ; timer             ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
 +-------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration IP Cores Summary                                                                                       ;
+; Analysis & Synthesis IP Cores Summary                                                                                         ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                             ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
 ; Altera ; ALTPLL       ; 20.1    ; N/A          ; N/A          ; |top_timer_de2_115|pll_timer:pll_timer_inst ; pll_timer.vhd   ;
 +--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------+
+; State Machine - |top_timer_de2_115|bin2bcd:bin2bcd2|state ;
++-------------+------------+-------------+------------------+
+; Name        ; state.done ; state.shift ; state.start      ;
++-------------+------------+-------------+------------------+
+; state.start ; 0          ; 0           ; 0                ;
+; state.shift ; 0          ; 1           ; 1                ;
+; state.done  ; 1          ; 0           ; 1                ;
++-------------+------------+-------------+------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------+
+; State Machine - |top_timer_de2_115|bin2bcd:bin2bcd1|state ;
++-------------+------------+-------------+------------------+
+; Name        ; state.done ; state.shift ; state.start      ;
++-------------+------------+-------------+------------------+
+; state.start ; 0          ; 0           ; 0                ;
+; state.shift ; 0          ; 1           ; 1                ;
+; state.done  ; 1          ; 0           ; 1                ;
++-------------+------------+-------------+------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------+
+; State Machine - |top_timer_de2_115|bin2bcd:bin2bcd0|state ;
++-------------+------------+-------------+------------------+
+; Name        ; state.done ; state.shift ; state.start      ;
++-------------+------------+-------------+------------------+
+; state.start ; 0          ; 0           ; 0                ;
+; state.shift ; 0          ; 1           ; 1                ;
+; state.done  ; 1          ; 0           ; 1                ;
++-------------+------------+-------------+------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++---------------------------------------+-----------------------------------------------+
+; Register name                         ; Reason for Removal                            ;
++---------------------------------------+-----------------------------------------------+
+; bin2bcd:bin2bcd1|state.done           ; Merged with bin2bcd:bin2bcd0|state.done       ;
+; bin2bcd:bin2bcd1|shift_counter[2]     ; Merged with bin2bcd:bin2bcd0|shift_counter[2] ;
+; bin2bcd:bin2bcd1|shift_counter[1]     ; Merged with bin2bcd:bin2bcd0|shift_counter[1] ;
+; bin2bcd:bin2bcd1|shift_counter[0]     ; Merged with bin2bcd:bin2bcd0|shift_counter[0] ;
+; bin2bcd:bin2bcd1|state.shift          ; Merged with bin2bcd:bin2bcd0|state.shift      ;
+; bin2bcd:bin2bcd1|state.start          ; Merged with bin2bcd:bin2bcd0|state.start      ;
+; Total Number of Removed Registers = 6 ;                                               ;
++---------------------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 120   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 120   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_timer_de2_115|timer:t0|s_reg[4]          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_timer_de2_115|timer:t0|m_reg[2]          ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_timer_de2_115|timer:t0|h_reg[4]          ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top_timer_de2_115|bin2bcd:bin2bcd2|binary[3] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_timer_de2_115|bin2bcd:bin2bcd1|binary[4] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_timer_de2_115|bin2bcd:bin2bcd0|binary[1] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd0|bcds_next ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd0|bcds_next ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd1|bcds_next ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd1|bcds_next ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd2|bcds_next ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_timer_de2_115|bin2bcd:bin2bcd2|bcds_next ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -509,93 +772,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+--------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                           ; Setting            ; Default Value      ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; top_timer_de2_115  ; timer              ;
-; Family name                                                      ; Cyclone IV E       ; Cyclone IV GX      ;
-; Maximum processors allowed for parallel compilation              ; All                ;                    ;
-; Use smart compilation                                            ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                      ; Off                ; Off                ;
-; Restructure Multiplexers                                         ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
-; Preserve fewer node names                                        ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
-; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                         ; Auto               ; Auto               ;
-; Safe State Machine                                               ; Off                ; Off                ;
-; Extract Verilog State Machines                                   ; On                 ; On                 ;
-; Extract VHDL State Machines                                      ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
-; Parallel Synthesis                                               ; On                 ; On                 ;
-; DSP Block Balancing                                              ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                               ; On                 ; On                 ;
-; Power-Up Don't Care                                              ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
-; Remove Duplicate Registers                                       ; On                 ; On                 ;
-; Ignore CARRY Buffers                                             ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
-; Ignore LCELL Buffers                                             ; Off                ; Off                ;
-; Ignore SOFT Buffers                                              ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
-; Optimization Technique                                           ; Balanced           ; Balanced           ;
-; Carry Chain Length                                               ; 70                 ; 70                 ;
-; Auto Carry Chains                                                ; On                 ; On                 ;
-; Auto Open-Drain Pins                                             ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
-; Auto ROM Replacement                                             ; On                 ; On                 ;
-; Auto RAM Replacement                                             ; On                 ; On                 ;
-; Auto DSP Block Replacement                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
-; Strict RAM Replacement                                           ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
-; Auto RAM Block Balancing                                         ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
-; Auto Resource Sharing                                            ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
-; Timing-Driven Synthesis                                          ; On                 ; On                 ;
-; Report Parameter Settings                                        ; On                 ; On                 ;
-; Report Source Assignments                                        ; On                 ; On                 ;
-; Report Connectivity Checks                                       ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
-; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
-; Clock MUX Protection                                             ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
-; Block Design Naming                                              ; Auto               ; Auto               ;
-; SDC constraint protection                                        ; Off                ; Off                ;
-; Synthesis Effort                                                 ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
-+------------------------------------------------------------------+--------------------+--------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "bin2bcd:bin2bcd2"                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -629,35 +805,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 44                          ;
+; cycloneiii_ff         ; 120                         ;
+;     CLR               ; 79                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA CLR           ; 40                          ;
+; cycloneiii_lcell_comb ; 230                         ;
+;     arith             ; 39                          ;
+;         2 data inputs ; 39                          ;
+;     normal            ; 191                         ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 134                         ;
+; cycloneiii_pll        ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.61                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
-    Info: Processing started: Mon Jun  1 21:30:08 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timer -c timer --analysis_and_elaboration
+    Info: Processing started: Tue Jun  2 08:15:41 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timer -c timer
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file list_09_05_06_timer_CORRIGIDO_50mhz.vhd
-    Info (12022): Found design unit 1: timer-single_clock_arch File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd Line: 15
-    Info (12023): Found entity 1: timer File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd Line: 7
+    Info (12022): Found design unit 1: timer-single_clock_arch File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd Line: 15
+    Info (12023): Found entity 1: timer File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file bcd2ssd.vhd
-    Info (12022): Found design unit 1: bcd2ssd-arch File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd Line: 12
-    Info (12023): Found entity 1: bcd2ssd File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd Line: 4
+    Info (12022): Found design unit 1: bcd2ssd-arch File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd Line: 12
+    Info (12023): Found entity 1: bcd2ssd File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file bin2bcd.vhd
-    Info (12022): Found design unit 1: bin2bcd-behaviour File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd Line: 16
-    Info (12023): Found entity 1: bin2bcd File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd Line: 7
+    Info (12022): Found design unit 1: bin2bcd-behaviour File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd Line: 16
+    Info (12023): Found entity 1: bin2bcd File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file top_timer_de2_115.vhd
-    Info (12022): Found design unit 1: top_timer_de2_115-top File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 19
-    Info (12023): Found entity 1: top_timer_de2_115 File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 5
+    Info (12022): Found design unit 1: top_timer_de2_115-top File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 19
+    Info (12023): Found entity 1: top_timer_de2_115 File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pll_timer.vhd
-    Info (12022): Found design unit 1: pll_timer-SYN File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 52
-    Info (12023): Found entity 1: pll_timer File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 43
+    Info (12022): Found design unit 1: pll_timer-SYN File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 52
+    Info (12023): Found entity 1: pll_timer File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 43
 Info (12127): Elaborating entity "top_timer_de2_115" for the top level hierarchy
-Info (12128): Elaborating entity "pll_timer" for hierarchy "pll_timer:pll_timer_inst" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 65
-Info (12128): Elaborating entity "altpll" for hierarchy "pll_timer:pll_timer_inst|altpll:altpll_component" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
-Info (12130): Elaborated megafunction instantiation "pll_timer:pll_timer_inst|altpll:altpll_component" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
-Info (12133): Instantiated megafunction "pll_timer:pll_timer_inst|altpll:altpll_component" with the following parameter: File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
+Info (12128): Elaborating entity "pll_timer" for hierarchy "pll_timer:pll_timer_inst" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 65
+Info (12128): Elaborating entity "altpll" for hierarchy "pll_timer:pll_timer_inst|altpll:altpll_component" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
+Info (12130): Elaborated megafunction instantiation "pll_timer:pll_timer_inst|altpll:altpll_component" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
+Info (12133): Instantiated megafunction "pll_timer:pll_timer_inst|altpll:altpll_component" with the following parameter: File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd Line: 134
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "25000"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -713,17 +923,24 @@ Info (12133): Instantiated megafunction "pll_timer:pll_timer_inst|altpll:altpll_
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_timer_altpll.v
-    Info (12023): Found entity 1: pll_timer_altpll File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_timer_altpll File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/db/pll_timer_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_timer_altpll" for hierarchy "pll_timer:pll_timer_inst|altpll:altpll_component|pll_timer_altpll:auto_generated" File: /opt/altera/intelFPGA/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12129): Elaborating entity "timer" using architecture "A:single_clock_arch" for hierarchy "timer:t0" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 70
-Warning (10541): VHDL Signal Declaration warning at list_09_05_06_timer_CORRIGIDO_50mhz.vhd(22): used implicit default value for signal "h_en" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd Line: 22
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bin2bcd0" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 79
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bin2bcd2" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 107
-Info (12128): Elaborating entity "bcd2ssd" for hierarchy "bcd2ssd:bcd0" File: /home/yan.pp2006/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 121
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 730 megabytes
-    Info: Processing ended: Mon Jun  1 21:30:12 2026
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:05
+Info (12129): Elaborating entity "timer" using architecture "A:single_clock_arch" for hierarchy "timer:t0" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 70
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bin2bcd0" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 79
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bin2bcd2" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 107
+Info (12128): Elaborating entity "bcd2ssd" for hierarchy "bcd2ssd:bcd0" File: /home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd Line: 121
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 295 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 250 logic cells
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 485 megabytes
+    Info: Processing ended: Tue Jun  2 08:15:47 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
 
 

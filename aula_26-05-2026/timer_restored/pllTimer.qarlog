@@ -1,0 +1,27 @@
+Quartus Prime Archive log --	/home/aluno/ELDII/aula_26-05-2026/timer_restored/pllTimer.qarlog
+
+Archive:	/home/aluno/ELDII/aula_26-05-2026/timer_restored/pllTimer.qar
+Date:		Tue Jun  2 08:38:13 2026
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/SDC.sdc
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/assignment_defaults.qdf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/bcd2ssd.vhd
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/bin2bcd.vhd
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/list_09_05_06_timer_CORRIGIDO_50mhz.vhd
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.cmp
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.ppf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.qip
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer.vhd
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/pll_timer_inst.vhd
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/simulation/modelsim/tb_pllTimer.do
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/timer.qpf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/timer.qsf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/timer_qsim.qsf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/timer_qsim_assignment_defaults.qdf
+/home/aluno/ELDII/aula_26-05-2026/timer_restored/top_timer_de2_115.vhd
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
