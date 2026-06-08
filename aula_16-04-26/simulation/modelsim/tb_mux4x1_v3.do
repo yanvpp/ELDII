@@ -1,7 +1,7 @@
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {/home/aluno/ELDII/aula 16-04-26/mux4x1.vhd}
+vcom -93 -work work {../../mux4x1.vhd}
 
 vsim work.mux4x1
 

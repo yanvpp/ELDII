@@ -2,14 +2,11 @@ vlib rtl_work
 
 vmap work rtl_work
 
-vcom -93 -work work {../../seqAForLoop.vhd}
+vcom -93 -work work {seqAForLoop.vhd}
 
 vsim work.seqaforloop(code_v1)
 
-add wave -position insertpoint \
-sim:/seqaforloop/a \
-sim:/seqaforloop/p \
-sim:/seqaforloop/y
+add wave -position insertpoint sim:/seqaforloop/*
 
 force -freeze sim:/seqaforloop/a 00000000 0
 run

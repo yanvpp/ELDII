@@ -3,13 +3,7 @@ vmap work rtl_work
 vcom -93 -work work {../../deslocamentoLivre.vhd}
 vsim work.deslocamentolivre(exemplo)
 
-add wave -position insertpoint  \
-sim:/deslocamentolivre/clk \
-sim:/deslocamentolivre/reset \
-sim:/deslocamentolivre/d \
-sim:/deslocamentolivre/q \
-sim:/deslocamentolivre/r_reg \
-sim:/deslocamentolivre/r_next
+add wave -position insertpoint sim:/deslocamentolivre/*
 
 force -freeze sim:/deslocamentolivre/reset 1 0
 force -freeze sim:/deslocamentolivre/clk 1 0
