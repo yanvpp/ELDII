@@ -1,0 +1,18 @@
+blink faz piscar o que está sendo ajustado
+
+sync_keys.vhd -> adicionar antes dos pinos (keys) para transformar em saídas síncronas
+
+botões -> | - | + | ajuste | reset |
+
+o ajuste, quando clicado uma vez, pisca a hora, depois passa pra minuto, depois pra segundo, depois finaliza a configuração
+
+Entradas da máquina de estados:
+
+	Key(0) -> Reset
+	Key(1) -> Ajuste
+	Key(2) -> +
+	key(3) -> -
+
+Saídas da máquina de estados:
+
+

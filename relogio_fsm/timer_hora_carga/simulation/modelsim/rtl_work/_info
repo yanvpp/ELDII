@@ -1,0 +1,226 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/aluno/ELDII/relogio_fsm/timer_hora_carga/simulation/modelsim
+Ebcd2ssd
+Z1 w1747744144
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd
+Z5 F/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd
+l0
+L4 1
+V5GWThJ2ijE`QC;e3olWnd0
+!s100 f6e0n9AS<^:[d8E^``WLW0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1781177864
+!i10b 1
+Z8 !s108 1781177864.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd|
+Z10 !s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+DEx4 work 7 bcd2ssd 0 22 5GWThJ2ijE`QC;e3olWnd0
+!i122 3
+l13
+L12 17
+V6LNLkK<OEFV:VHFW5e3dC0
+!s100 38VO1f>i=D1F3aT@>ZOko0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebin2bcd
+Z13 w1613954755
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 1
+R0
+Z16 8/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd
+Z17 F/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd
+l0
+L7 1
+V1cM=eI2HCb0F3PTOoCz`Z3
+!s100 >kXk<ZUi7VU1110gkK@:<2
+R6
+31
+R7
+!i10b 1
+Z18 !s108 1781177863.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd|
+Z20 !s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R14
+R15
+R2
+R3
+DEx4 work 7 bin2bcd 0 22 1cM=eI2HCb0F3PTOoCz`Z3
+!i122 1
+l26
+L16 77
+V;A17?jzP@I?K=Z3o>iZ_c2
+!s100 TmNB]>J911Hi5?EJz77XU2
+R6
+31
+R7
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Eblink
+Z21 w1747948916
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 4
+R0
+Z23 8/home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd
+Z24 F/home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd
+l0
+L6 1
+VSH>:V07HAaK6V9BjN^Y1_3
+!s100 d>nFTRI2XEX022NVUF5Q10
+R6
+31
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd|
+!s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd|
+!i113 1
+R11
+R12
+Aarch
+R22
+R2
+R3
+DEx4 work 5 blink 0 22 SH>:V07HAaK6V9BjN^Y1_3
+!i122 4
+l16
+L13 21
+VzZd`YBIA=hHH?N>G;Wi^=1
+!s100 aRS[5Cj;c[Qi_=JRlFb>J1
+R6
+31
+R7
+!i10b 1
+R8
+R25
+Z26 !s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd|
+!i113 1
+R11
+R12
+Etimer
+Z27 w1748298682
+R22
+R2
+R3
+!i122 0
+R0
+Z28 8/home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd
+Z29 F/home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd
+l0
+L9 1
+V]n<E4zAb>EX6:YGeB[7Kz2
+!s100 0UB@ZoXGfcFmHHX2:^;fk1
+R6
+31
+Z30 !s110 1781177863
+!i10b 1
+R18
+Z31 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd|
+Z32 !s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd|
+!i113 1
+R11
+R12
+Asingle_clock_arch
+R22
+R2
+R3
+DEx4 work 5 timer 0 22 ]n<E4zAb>EX6:YGeB[7Kz2
+!i122 0
+l28
+L20 56
+VeXYeoZ1ZOJ3]O7a5l[MnA1
+!s100 [j]PkE]c=c7MN_3;XG1VA2
+R6
+31
+R30
+!i10b 1
+R18
+R31
+R32
+!i113 1
+R11
+R12
+Etop_timer_de2_115
+Z33 w1748285291
+R22
+R2
+R3
+!i122 2
+R0
+Z34 8/home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd
+Z35 F/home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd
+l0
+L5 1
+VdBFWE>59H_>QF1CkQ6HL`0
+!s100 SKJ[NzM;YGOKhc9D9X=^B2
+R6
+31
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd|
+Z37 !s107 /home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd|
+!i113 1
+R11
+R12
+Atop
+R22
+R2
+R3
+DEx4 work 17 top_timer_de2_115 0 22 dBFWE>59H_>QF1CkQ6HL`0
+!i122 2
+l73
+L19 167
+V2Jc3fAnj5U?9azh>mmkc[3
+!s100 c965l@Z8<[Qe>2W27m1>11
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
