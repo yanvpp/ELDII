@@ -18,6 +18,28 @@ end entity;
 
 architecture top of top_timer_de2_115 is
 
+  -- declarando relogio_fsm como componente
+  component relogio_fsm
+    port (
+      clk, reset, ajuste, incrementa, decrementa : in std_logic;
+      hora_in 			: in std_logic_vector (4 downto 0);
+      min_in, seg_in : in std_logic_vector (5 downto 0);
+      blink_h, blink_m, blink_s : out std_logic;
+      load : out std_logic;
+      hora_out 			: out std_logic_vector (4 downto 0);
+      min_out, seg_out 	: out std_logic_vector (5 downto 0)
+    );
+  end component;
+
+  -- declarando sync_keys como componente
+  component sync_keys
+    port (
+      clk, reset: in std_logic;
+      keys_i: in std_logic_vector(2 downto 0);  -- entradas assíncronas
+      keys_o: out std_logic_vector(2 downto 0)  -- saídas sincronizadas 
+    );
+  end component;
+
   component timer
     port (
       clk, reset : in std_logic;
@@ -38,7 +60,7 @@ architecture top of top_timer_de2_115 is
     );
   end component;
   
-   component blink is
+  component blink is
    port(
       clk, reset, en: in std_logic;
 		blink	: out std_logic
@@ -52,23 +74,31 @@ architecture top of top_timer_de2_115 is
     );
   end component;
 
+  -- separação em dezena e unidade para display de 7 segmentos
   signal hourT, hourU: std_logic_vector(3 downto 0);
   signal minT, minU  : std_logic_vector(3 downto 0);
   signal secT, secU  : std_logic_vector(3 downto 0);
-  signal hourT_blink, 
-			hourU_blink : std_logic_vector(3 downto 0);
-  signal minT_blink, 
-			minU_blink  : std_logic_vector(3 downto 0);
-  signal secT_blink, 
-			secU_blink  : std_logic_vector(3 downto 0);
+
+  -- blink
+  signal hourT_blink, hourU_blink : std_logic_vector(3 downto 0);
+  signal minT_blink, minU_blink   : std_logic_vector(3 downto 0);
+  signal secT_blink, secU_blink   : std_logic_vector(3 downto 0);
+  signal blink_o		: std_logic;
+  signal blink_s, blink_m, blink_h	: std_logic;
+
+  -- sinais internos
+  signal reset, load : std_logic;
+  
+  signal adjust		: std_logic;
   signal hour        : std_logic_vector(4 downto 0);
   signal min, sec    : std_logic_vector(5 downto 0);
-  signal reset, load : std_logic;
-  signal blink_o		: std_logic;
-  signal blink_s, 
-			blink_m, 
-			blink_h		: std_logic;
-  signal adjust		: std_logic;
+
+  signal raw_keys, sinc_keys : std_logic_vector (2 downto 0);
+  -- botões de ajuste, incremento e decremento 
+  signal b_ajuste, b_incrementa, b_decrementa : std_logic;
+
+
+
 
 begin
 
