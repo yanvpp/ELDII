@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity top_timer_de2_115 is
   port (
     CLOCK_50 : in std_logic;
-    KEY      : in std_logic_vector (1 downto 0);
+    KEY      : in std_logic_vector (3 downto 0);
     HEX0     : out std_logic_vector (6 downto 0);
     HEX1     : out std_logic_vector (6 downto 0);
     HEX2     : out std_logic_vector (6 downto 0);
@@ -85,6 +85,8 @@ architecture top of top_timer_de2_115 is
   signal secT_blink, secU_blink   : std_logic_vector(3 downto 0);
   signal blink_o		: std_logic;
   signal blink_s, blink_m, blink_h	: std_logic;
+  signal fsm_any_blink : std_logic;
+  signal pisca : std_logic;
 
   -- sinais internos
   signal reset, load : std_logic;
@@ -97,37 +99,107 @@ architecture top of top_timer_de2_115 is
   -- botões de ajuste, incremento e decremento 
   signal b_ajuste, b_incrementa, b_decrementa : std_logic;
 
+  -- hora que vem do timer
+	signal hora_atual : std_logic_vector (4 downto 0);
+	signal min_atual  : std_logic_vector (5 downto 0);
+	signal seg_atual  : std_logic_vector (5 downto 0);
 
-
-
+	-- sinais de ajuste fsm/timer
+	signal fsm_hour_out : std_logic_vector (4 downto 0);
+	signal fsm_min_out  : std_logic_vector(5 downto 0);
+	signal fsm_sec_out  : std_logic_vector(5 downto 0);
+	signal fsm_load     : std_logic;
+	
 begin
 
   reset <= not KEY(0);
   
-  adjust <= not KEY(1);
-  blink_s <= adjust;
-  blink_m <= adjust;
-  blink_h <= adjust;
+  raw_keys(0) <= not(KEY(1));
+  raw_keys(1) <= not(KEY(2));
+  raw_keys(2) <= not(KEY(3));
 
-  t0 : timer
+  inst_sync_keys : sync_keys
+	port map (
+		clk => CLOCK_50,
+		reset => reset,
+		keys_i => raw_keys,
+		keys_o => sinc_keys
+	);
+	
+	b_ajuste <= sinc_keys(0);
+	b_incrementa <= sinc_keys(1);
+	b_decrementa <= sinc_keys(2);
+	
+	inst_fsm : relogio_fsm
+		port map (
+			clk => CLOCK_50,
+			reset => reset,
+			ajuste => b_ajuste,
+			incrementa => b_incrementa,
+			decrementa => b_decrementa,
+			
+			hora_in => hora_atual,
+			min_in => min_atual,
+			seg_in => seg_atual,
+			
+			blink_h => blink_h,
+			blink_m => blink_m,
+			blink_s => blink_s,
+			load => fsm_load,
+			
+			hora_out => fsm_hour_out,
+			min_out => fsm_min_out,
+			seg_out => fsm_sec_out
+		);
+		
+	t0 : timer
   port map(
-    clk   => CLOCK_50,
-    reset => reset,
-	 load  =>  adjust,
-	 hour_i=> std_logic_vector(to_unsigned(23,5)),
-    sec_i => std_logic_vector(to_unsigned(30,6)),
-	 min_i => std_logic_vector(to_unsigned(59,6)),
-	 hour  => hour,
-    sec   => sec,
-    min   => min);
-
+		 clk   => CLOCK_50,
+		 reset => reset,
+		 load  =>  fsm_load,
+		 hour_i=> fsm_hour_out,
+		 sec_i => fsm_min_out,
+		 min_i => fsm_sec_out,
+		 hour  => hora_atual,
+		 sec   => seg_atual,
+		 min   => min_atual
+	 );
+	 
+	 fsm_any_blink <= blink_h or blink_m or blink_s;
+	 
+	blink1 : blink
+		port map (
+			clk => CLOCK_50,
+			reset => reset,
+			en => fsm_any_blink,
+			blink => pisca
+		);
+		
+	secU_blink <= (others => '1') when (pisca = '1' and blink_s = '1')
+											else secU;
+											
+	secT_blink <= (others=>'1') when (pisca = '1' and blink_s = '1') 
+										 else secT;
+												
+	minU_blink <= (others=>'1') when (pisca = '1' and blink_m = '1') 
+										 else minU;
+										 
+	minT_blink <= (others=>'1') when (pisca = '1' and blink_m = '1') 
+										 else minT;
+  
+	hourU_blink <= (others=>'1') when (pisca = '1' and blink_h = '1') 
+										  else hourU;
+										 
+	hourT_blink <= (others=>'1') when (pisca = '1' and blink_h = '1')
+										  else hourT;
+										 
   bin2bcd_sec: bin2bcd
   generic map (
     N => 6)
   port map (
     clk => CLOCK_50, 
     reset => reset,
-    binary_in => sec,
+    binary_in => seg_atual,
     bcd0 => secU,
     bcd1 => secT, 
     bcd2 => open,
@@ -140,7 +212,7 @@ begin
   port map (
     clk => CLOCK_50, 
     reset => reset,
-    binary_in => min,
+    binary_in => min_atual,
     bcd0 => minU,
     bcd1 => minT, 
     bcd2 => open,
@@ -153,35 +225,13 @@ begin
   port map (
     clk => CLOCK_50, 
     reset => reset,
-    binary_in => hour,
+    binary_in => hora_atual,
     bcd0 => hourU,
     bcd1 => hourT, 
     bcd2 => open,
     bcd3 => open,
-    bcd4 => open);
-
+    bcd4 => open);	 
 	 
-	blink1: blink
-   port map(
-      clk   => CLOCK_50,
-		reset => reset,
-		en    => adjust,
-		blink =>	blink_o);
-	 
-	 
-  secU_blink <= (others=>'1') when (blink_o='1' and blink_s='1') else
-					 secU;
-  secT_blink <= (others=>'1') when (blink_o='1' and blink_s='1') else
-					 secT;
-  minU_blink <= (others=>'1') when (blink_o='1' and blink_m='1') else
-					 minU;
-  minT_blink <= (others=>'1') when (blink_o='1' and blink_m='1') else
-					 minT;
-  hourU_blink <= (others=>'1') when (blink_o='1' and blink_h='1') else
-					  hourU;
-  hourT_blink <= (others=>'1') when (blink_o='1' and blink_h='1') else
-					  hourT;				
-				
   bcd_secU : bcd2ssd
   port map(
     BCD => secU_blink,
