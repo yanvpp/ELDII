@@ -62,15 +62,21 @@ begin
                 end if;
 
             when ajuste_h =>
-                if (incrementa = '1') then
+                blink_h <= '1';
+					 load <= '1';
+					 
+					 if (incrementa = '1') then
                     next_state <= incrementa_h;
                 elsif (decrementa = '1') then
-                    next_state <= decrementa_m;
+                    next_state <= decrementa_h;
                 elsif (ajuste = '1') then
                     next_state <= ajuste_m;
                 end if;
             
             when ajuste_m =>
+					 blink_m <= '1';
+					 load <= '1';
+				
                 if (incrementa = '1') then
                     next_state <= incrementa_m;
                 elsif (decrementa = '1') then
@@ -80,6 +86,9 @@ begin
                 end if;
 
             when ajuste_s =>
+					 blink_s <= '1';
+					 load <= '1';
+				
                 if (incrementa = '1') then
                     next_state <= incrementa_s;
                 elsif (decrementa = '1') then
@@ -89,40 +98,64 @@ begin
                 end if;
 
             when incrementa_h =>
-                hora_out <= std_logic_vector(unsigned(hora_in) + 1);
                 blink_h <= '1';
                 load <= '1';
                 next_state <= ajuste_h;
+					 if (unsigned(hora_in) = 23) then
+						hora_out <= std_logic_vector(to_unsigned(0, 5));
+					 else
+						hora_out <= std_logic_vector(unsigned(hora_in) + 1);
+					 end if;
             
             when decrementa_h =>
-                hora_out <= std_logic_vector(unsigned(hora_in) - 1);
                 blink_h <= '1';
                 load <= '1';
                 next_state <= ajuste_h;
+					 if (unsigned(hora_in) = 0) then
+						hora_out <= std_logic_vector(to_unsigned(23, 5));
+					 else
+						hora_out <= std_logic_vector(unsigned(hora_in) - 1);
+					 end if;
 
             when incrementa_m =>
-                min_out <= std_logic_vector(unsigned(min_in) + 1);
                 blink_m <= '1';
                 load <= '1';
                 next_state <= ajuste_m;
+					 if (unsigned(min_in) = 23) then
+						min_out <= std_logic_vector(to_unsigned(0, 6));
+					 else
+						min_out <= std_logic_vector(unsigned(min_in) + 1);
+					 end if;
             
             when decrementa_m =>
-                min_out <= std_logic_vector(unsigned(min_in) - 1);
                 blink_m <= '1';
                 load <= '1';
                 next_state <= ajuste_m;
+					 if (unsigned(min_in) = 0) then
+						min_out <= std_logic_vector(to_unsigned(59, 6));
+					 else
+						min_out <= std_logic_vector(unsigned(min_in) - 1);
+					 end if;
 
             when incrementa_s =>
-                min_out <= std_logic_vector(unsigned(seg_in) + 1);
                 blink_s <= '1';
                 load <= '1';
                 next_state <= ajuste_s;
+					 if (unsigned(seg_in) = 59) then
+						seg_out <= std_logic_vector(to_unsigned(0, 6));
+					 else
+						seg_out <= std_logic_vector(unsigned(seg_in) + 1);
+					 end if;
 
             when decrementa_s =>
-                min_out <= std_logic_vector(unsigned(seg_in) - 1);
                 blink_s <= '1';
                 load <= '1';
                 next_state <= ajuste_s;
+					 if (unsigned(seg_in) = 0) then
+						seg_out <= std_logic_vector(to_unsigned(59, 6));
+					 else
+						seg_out <= std_logic_vector(unsigned(seg_in) - 1);
+					 end if;
 
             when others =>
                 next_state <= idle;
