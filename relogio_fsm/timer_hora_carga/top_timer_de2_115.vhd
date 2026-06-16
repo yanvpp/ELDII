@@ -158,8 +158,8 @@ begin
 		 reset => reset,
 		 load  =>  fsm_load,
 		 hour_i=> fsm_hour_out,
-		 sec_i => fsm_min_out,
-		 min_i => fsm_sec_out,
+		 min_i => fsm_min_out,
+		 sec_i => fsm_sec_out,
 		 hour  => hora_atual,
 		 sec   => seg_atual,
 		 min   => min_atual
