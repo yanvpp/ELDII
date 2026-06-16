@@ -1,0 +1,31 @@
+
+State Machine - |top_timer_de2_115|bin2bcd:bin2bcd_hour|state
+Name state.done state.shift state.start 
+state.start 0 0 0 
+state.shift 0 1 1 
+state.done 1 0 1 
+
+State Machine - |top_timer_de2_115|bin2bcd:bin2bcd_min|state
+Name state.done state.shift state.start 
+state.start 0 0 0 
+state.shift 0 1 1 
+state.done 1 0 1 
+
+State Machine - |top_timer_de2_115|bin2bcd:bin2bcd_sec|state
+Name state.done state.shift state.start 
+state.start 0 0 0 
+state.shift 0 1 1 
+state.done 1 0 1 
+
+State Machine - |top_timer_de2_115|relogio_fsm:inst_fsm|state_reg
+Name state_reg.decrementa_s state_reg.incrementa_s state_reg.ajuste_s state_reg.decrementa_m state_reg.incrementa_m state_reg.ajuste_m state_reg.decrementa_h state_reg.incrementa_h state_reg.ajuste_h state_reg.idle 
+state_reg.idle 0 0 0 0 0 0 0 0 0 0 
+state_reg.ajuste_h 0 0 0 0 0 0 0 0 1 1 
+state_reg.incrementa_h 0 0 0 0 0 0 0 1 0 1 
+state_reg.decrementa_h 0 0 0 0 0 0 1 0 0 1 
+state_reg.ajuste_m 0 0 0 0 0 1 0 0 0 1 
+state_reg.incrementa_m 0 0 0 0 1 0 0 0 0 1 
+state_reg.decrementa_m 0 0 0 1 0 0 0 0 0 1 
+state_reg.ajuste_s 0 0 1 0 0 0 0 0 0 1 
+state_reg.incrementa_s 0 1 0 0 0 0 0 0 0 1 
+state_reg.decrementa_s 1 0 0 0 0 0 0 0 0 1 

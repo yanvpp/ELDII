@@ -8,9 +8,21 @@
 # vmap work rtl_work 
 # Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
 # 
+# vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/relogio_fsm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:09 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/relogio_fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_fsm
+# -- Compiling architecture estados of relogio_fsm
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:37:43 on Jun 11,2026
+# Start time: 08:52:10 on Jun 16,2026
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/timer_hora_carga.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,11 +30,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity timer
 # -- Compiling architecture single_clock_arch of timer
-# End time: 08:37:43 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:37:43 on Jun 11,2026
+# Start time: 08:52:10 on Jun 16,2026
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/bin2bcd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -31,11 +43,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bin2bcd
 # -- Compiling architecture behaviour of bin2bcd
-# End time: 08:37:44 on Jun 11,2026, Elapsed time: 0:00:01
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:37:44 on Jun 11,2026
+# Start time: 08:52:10 on Jun 16,2026
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/top_timer_de2_115.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,22 +55,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity top_timer_de2_115
 # -- Compiling architecture top of top_timer_de2_115
-# End time: 08:37:44 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:37:44 on Jun 11,2026
+# Start time: 08:52:10 on Jun 16,2026
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/bcd2ssd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bcd2ssd
 # -- Compiling architecture arch of bcd2ssd
-# End time: 08:37:44 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:37:44 on Jun 11,2026
+# Start time: 08:52:10 on Jun 16,2026
 # vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/blink.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -66,20 +78,219 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity blink
 # -- Compiling architecture arch of blink
-# End time: 08:37:44 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/aluno/ELDII/relogio_fsm/timer_hora_carga/sync_keys.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:10 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work /home/aluno/ELDII/relogio_fsm/timer_hora_carga/sync_keys.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sync_keys
+# -- Compiling architecture arch of sync_keys
+# End time: 08:52:10 on Jun 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
-do tb_sync_keys.do
-# vsim work.sync_keys 
-# Start time: 08:37:49 on Jun 11,2026
-# ** Error: (vsim-3170) Could not find 'sync_keys'.
+do tb_comportamento-fsm.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:28 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../sync_keys.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sync_keys
+# -- Compiling architecture arch of sync_keys
+# End time: 08:56:28 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:28 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../timer_hora_carga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity timer
+# -- Compiling architecture single_clock_arch of timer
+# End time: 08:56:28 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:28 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../bin2bcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bin2bcd
+# -- Compiling architecture behaviour of bin2bcd
+# End time: 08:56:28 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:28 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../top_timer_de2_115.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_timer_de2_115
+# -- Compiling architecture top of top_timer_de2_115
+# End time: 08:56:29 on Jun 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:29 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../bcd2ssd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bcd2ssd
+# -- Compiling architecture arch of bcd2ssd
+# End time: 08:56:29 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:29 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../blink.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity blink
+# -- Compiling architecture arch of blink
+# End time: 08:56:29 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:56:29 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../relogio_fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_fsm
+# -- Compiling architecture estados of relogio_fsm
+# End time: 08:56:29 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.fsm_relogio 
+# Start time: 08:56:29 on Jun 16,2026
+# ** Error: (vsim-3170) Could not find 'fsm_relogio'.
 #         Searched libraries:
 #             /home/aluno/ELDII/relogio_fsm/timer_hora_carga/simulation/modelsim/rtl_work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./tb_sync_keys.do PAUSED at line 1
-# End time: 08:38:06 on Jun 11,2026, Elapsed time: 0:00:17
-# Errors: 1, Warnings: 0
+# MACRO ./tb_comportamento-fsm.do PAUSED at line 13
+do tb_comportamento-fsm.do
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /opt/altera/intelFPGA/20.1/modelsim_ae/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../sync_keys.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sync_keys
+# -- Compiling architecture arch of sync_keys
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../timer_hora_carga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity timer
+# -- Compiling architecture single_clock_arch of timer
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../bin2bcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bin2bcd
+# -- Compiling architecture behaviour of bin2bcd
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../top_timer_de2_115.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_timer_de2_115
+# -- Compiling architecture top of top_timer_de2_115
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../bcd2ssd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bcd2ssd
+# -- Compiling architecture arch of bcd2ssd
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../blink.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity blink
+# -- Compiling architecture arch of blink
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:08 on Jun 16,2026
+# vcom -reportprogress 300 -93 -work work ../../relogio_fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity relogio_fsm
+# -- Compiling architecture estados of relogio_fsm
+# End time: 08:57:08 on Jun 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.relogio_fsm 
+# Start time: 08:56:29 on Jun 16,2026
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 6.1.0-49-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.relogio_fsm(estados)
+# 0 ps
+# 3517500 ps
+wave zoom full
+# {0 ps} {3517500 ps}
+wave zoom full
+# {0 ps} {3517500 ps}
