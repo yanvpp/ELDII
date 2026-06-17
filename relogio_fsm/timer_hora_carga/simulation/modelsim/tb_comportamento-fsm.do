@@ -56,7 +56,7 @@ run 200 ns
 # INCREMENTANDO MINUTO
 force -freeze sim:/relogio_fsm/incrementa 1 0
 run 100 ns
-force -freeze sim:/relogio_fsm/incrementa 0 0
+force -freeze sim:/relogio_fsm/incrementa 0 0 
 run 200 ns
 
 # DECREMENTANDO MINUTO
@@ -65,7 +65,7 @@ run 100 ns
 force -freeze sim:/relogio_fsm/decrementa 0 0
 run 200 ns
 
-# TRANSICAO PARA SEUNDO
+# TRANSICAO PARA SEGUNDO
 force -freeze sim:/relogio_fsm/ajuste 1 0
 run 100 ns
 force -freeze sim:/relogio_fsm/ajuste 0 0
