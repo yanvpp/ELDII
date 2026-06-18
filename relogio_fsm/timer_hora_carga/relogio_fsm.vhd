@@ -121,7 +121,7 @@ begin
                 blink_m <= '1';
                 load <= '1';
                 next_state <= ajuste_m;
-					 if (unsigned(min_in) = 23) then
+					 if (unsigned(min_in) = 59) then
 						min_out <= std_logic_vector(to_unsigned(0, 6));
 					 else
 						min_out <= std_logic_vector(unsigned(min_in) + 1);
